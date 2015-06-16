@@ -10,10 +10,20 @@ public abstract class IllegalClassAbstract {
 		System.out.println("Final Method inside an Abstract Class");
 		InnerClass ic = new InnerClass();
 		ic.print();
+		int[] list = new int[5];
+		list[0] = 10;
+		list[1] = 20;
+		list[2] = 30;
+		list[3] = 40;
+		list[4] = 50;
+		ic.print(list);
 	}
 
 	private class InnerClass {
-		public void print(){
+		public void print(int... x){
+			for (int i : x) {
+				System.out.println("Multiple Args" + i);
+			}
 			System.out.println("Private Nested Class");
 		}
 	}
