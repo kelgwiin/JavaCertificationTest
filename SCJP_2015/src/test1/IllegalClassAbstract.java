@@ -22,7 +22,7 @@ public abstract class IllegalClassAbstract {
 	private class InnerClass {
 		public void print(int... x){
 			for (int i : x) {
-				System.out.println("Multiple Args" + i);
+				System.out.println("Multiple Args: " + i+ " Length: "+x.length);
 			}
 			System.out.println("Private Nested Class");
 		}
