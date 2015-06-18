@@ -50,12 +50,11 @@ public class Main /** 1) extends Coo1 **/
 	public void callTestShort(){
 		short item = 2;
 		byte itemByte = 3;
-		long itemLong = 30;
+		//long itemLong = 30;
 		
 		testShort(item);
 		testShort(itemByte);
-		//testShort(itemLong); // it does not work because long is greater tha int
-		 
+		//testShort(itemLong); // it does not work because long is greater tha int		 
 	}
 	public void dataType(){
 		int [] a;
