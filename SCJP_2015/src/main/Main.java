@@ -43,7 +43,20 @@ public class Main /** 1) extends Coo1 **/
 		
 	}
 	
+	public void testShort(int v){
+		v = v+1;
+	}
 	
+	public void callTestShort(){
+		short item = 2;
+		byte itemByte = 3;
+		long itemLong = 30;
+		
+		testShort(item);
+		testShort(itemByte);
+		//testShort(itemLong); // it does not woek because long is greater tha int
+		
+	}
 	public void dataType(){
 		int [] a;
 		String[] b1[];
