@@ -41,8 +41,7 @@ public class Main /** 1) extends Coo1 **/
 		en = MyEnum.DOS;
 		Main.print(en.getNum());
 		Main.print(en.getName());
-		//Main.test1();
-		
+		Main.test1();
 	}
 	
 	public static void print(Object obj){
@@ -65,6 +64,7 @@ public class Main /** 1) extends Coo1 **/
 			// }
 
 		};
+		ac.myMethodFinalIllegal();
 		InnerPublicClass pc = ac.new InnerPublicClass();
 
 		ac.myMethod();

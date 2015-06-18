@@ -1,6 +1,6 @@
 package test1;
 
-public abstract class IllegalClassAbstract {
+public abstract class IllegalClassAbstract extends Coo1 {
 	public abstract void myMethod();
 
 	/**
@@ -17,6 +17,7 @@ public abstract class IllegalClassAbstract {
 		list[3] = 40;
 		list[4] = 50;
 		ic.print(list);
+		print();
 	}
 
 	private class InnerClass {
