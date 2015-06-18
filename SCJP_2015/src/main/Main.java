@@ -55,7 +55,7 @@ public class Main /** 1) extends Coo1 **/
 		testShort(item);
 		testShort(itemByte);
 		//testShort(itemLong); // it does not work because long is greater tha int
-		
+		 
 	}
 	public void dataType(){
 		int [] a;
