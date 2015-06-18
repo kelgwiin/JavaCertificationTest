@@ -46,14 +46,19 @@ public class Main /** 1) extends Coo1 **/
 	
 	public void dataType(){
 		int [] a;
-		int[] b1[];
+		String[] b1[];
+		int [] b1Int[];
+		
 		int b2[][];
 		int[][] b3;
 		
 		 a = new int[2];
-		 b1 = new int[2][3];
+		 b1 = new String[2][3];
 		 b2 = new int[2][3];
 		 b3 = new int[2][3];
+		 b2[1][1] = 12;
+		 
+		 b1[1][2] = "sds";
 	}
 	public static void print(Object obj){
 		System.out.println(obj);
