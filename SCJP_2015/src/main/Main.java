@@ -9,43 +9,61 @@ import test1.IllegalClassAbstract.*;
  * @author kgamez
  * 
  */
+
+//enum MyEnum {
+//	UNO(10){
+//		public String getName(){
+//			return "Uno ";
+//		}
+//	}, 
+//	DOS(20) ,
+//	TRES(30);
+//	
+//	private int num;
+//	private String name;
+//	MyEnum(int num){
+//		this.num = num;
+//		name = "Número";
+//	}
+//	
+//	public int getNum(){
+//		return num;
+//	}
+//	
+//	public String getName(){
+//		return name;
+//	}
+//}
 public class Main /** 1) extends Coo1 **/
 {
-	enum MyEnum {
-		UNO(10){
-			public String getName(){
-				return "Uno ";
-			}
-		}, 
-		DOS(20) ,
-		TRES(30);
-		
-		private int num;
-		private String name;
-		MyEnum(int num){
-			this.num = num;
-			name = "Número";
-		}
-		
-		public int getNum(){
-			return num;
-		}
-		
-		public String getName(){
-			return name;
-		}
-	}
+
 	
 	public static void main(String[] args) {
-		MyEnum en;
-		en = MyEnum.DOS;
-		Main.print(en.getNum());
-		Main.print(en.getName());
-		Main.test1();
+		//Main.test1();
+		
 	}
 	
+	
+	public void dataType(){
+		int [] a;
+		int[] b1[];
+		int b2[][];
+		int[][] b3;
+		
+		 a = new int[2];
+		 b1 = new int[2][3];
+		 b2 = new int[2][3];
+		 b3 = new int[2][3];
+	}
 	public static void print(Object obj){
 		System.out.println(obj);
+	}
+	
+	public static void test2(){
+//		MyEnum en;
+//		en = MyEnum.DOS;
+//		Main.print(en.getNum());
+//		Main.print(en.getName());
 	}
 	public static void test1() {
 		// TODO Auto-generated method stub
