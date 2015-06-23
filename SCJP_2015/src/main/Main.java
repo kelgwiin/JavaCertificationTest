@@ -1,5 +1,8 @@
 package main;
 
+import java.io.EOFException;
+import java.io.FileNotFoundException;
+
 import test1.*;
 import test1.IllegalClassAbstract.*;
 
@@ -36,13 +39,37 @@ import test1.IllegalClassAbstract.*;
 //}
 public class Main /** 1) extends Coo1 **/
 {
-
-	
 	public static void main(String[] args) {
 		//Main.test1();
-		
+		//Main.testEx();
+		Main.testUseInterface();
 	}
 	
+	public static void testUseInterface(){
+		UseInterface ui = new UseInterface();
+		ui.eat(2);
+		Main.tesUseInter(ui);
+
+//This doesn't not compile because the interface does not allow
+//		UseInterface ui = new UseInterface(){
+//			public String  eat(int var){
+//				
+//			}
+//			
+//		};
+	}
+	
+	private static void tesUseInter(AnimalInterface ai){
+		int a = ai.eat(2);
+	}
+	
+	public static void testEx(){
+		UseMethodWithException e = new UseMethodWithException();
+		e.testException();
+		
+		InheritMethodWithException ie = new InheritMethodWithException();
+		//ie.testException();
+	}
 	public void testShort(int v){
 		v = v+1;
 	}
