@@ -42,9 +42,23 @@ public class Main /** 1) extends Coo1 **/
 	public static void main(String[] args) {
 		//Main.test1();
 		//Main.testEx();
-		Main.testUseInterface();
+		//Main.testUseInterface();
+		
+		testAB();
+	}
+	public static void testAB(){
+		A aa = new A();
+		B bb = new B();
+		//B ba =  new A(); // compilation erro
+		A aab = new B();
+		print(aab.a);
+		aab.methid();
+		ab(bb);
 	}
 	
+	public static void ab(A bb){
+		
+	}
 	public static void testUseInterface(){
 		UseInterface ui = new UseInterface();
 		ui.eat(2);
