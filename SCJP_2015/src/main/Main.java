@@ -43,8 +43,10 @@ public class Main /** 1) extends Coo1 **/
 		//Main.test1();
 		//Main.testEx();
 		//Main.testUseInterface();
+		TestExit info = new TestExit();
 		
-		testAB();
+		System.out.println("String "+ info.a + " Boolean "+info.b);
+		//testAB();
 	}
 	public static void testAB(){
 		A aa = new A();
